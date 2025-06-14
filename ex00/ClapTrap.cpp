@@ -1,0 +1,54 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ClapTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hpehliva <hpehliva@student.42heilbronn.    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/06/14 14:29:12 by hpehliva          #+#    #+#             */
+/*   Updated: 2025/06/14 15:45:33 by hpehliva         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "ClapTrap.hpp"
+
+ClapTrap::ClapTrap(const std::string& name): name(name), hitPoints(10), energyPoints(10), attackDamage(0) {
+    std::cout << "ClapTrap" << name << " has been constructed." << std::endl;
+}
+
+ClapTrap::~ClapTrap(){
+    std::cout << "ClapTrap" << name << " has been destroyed." << std::endl;
+}
+
+ClapTrap::ClapTrap(const ClapTrap& copy): name(copy.name), hitPoints(copy.hitPoints), energyPoints(copy.energyPoints), attackDamage(copy.attackDamage){
+        std::cout << "ClapTrap" << name << " has been copy constructed!." << std::endl;
+}
+
+ClapTrap& ClapTrap::operator=(const ClapTrap& copy){
+    std::cout << "Operator called" << std::endl;
+    if(this != &copy)
+    {
+        name = copy.name;
+        hitPoints = copy.hitPoints;
+        attackDamage = copy.attackDamage;
+        energyPoints = copy.energyPoints;
+    }
+    return *this;
+}
+
+
+
+
+unsigned int ClapTrap::getHitPoint() const{
+    return hitPoints;
+}
+unsigned int ClapTrap::getEnergyPoints() const{
+    return energyPoints;
+}
+
+unsigned int ClapTrap::getAttackDamage() const{
+    return attackDamage;
+}
+std::string ClapTrap::getName() const{
+    return name;
+}
