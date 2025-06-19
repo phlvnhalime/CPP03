@@ -6,17 +6,17 @@
 #    By: hpehliva <hpehliva@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/14 14:29:05 by hpehliva          #+#    #+#              #
-#    Updated: 2025/06/14 14:29:07 by hpehliva         ###   ########.fr        #
+#    Updated: 2025/06/19 15:45:56 by hpehliva         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = harl
+NAME = ClapTrap
 
 CXX = c++
 
 CXXFLAG = -Wall -Wextra -Werror -std=c++98
 
-SRCS= main.cpp Harl.cpp
+SRCS= main.cpp ClapTrap.cpp
 
 OBJ = $(SRCS:.cpp=.o)
 

@@ -6,7 +6,7 @@
 /*   By: hpehliva <hpehliva@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/14 14:29:15 by hpehliva          #+#    #+#             */
-/*   Updated: 2025/06/19 10:59:51 by hpehliva         ###   ########.fr       */
+/*   Updated: 2025/06/19 15:52:08 by hpehliva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,11 @@
 
 #include <iostream>
 #include <string>
+
+#define RESET   "\033[0m"
+#define RED     "\033[31m"      /* Red */
+#define BLUE    "\033[34m"      /* Blue */
+#define GREEN   "\033[32m"      /* Green */
 
 class ClapTrap{
 
