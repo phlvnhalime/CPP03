@@ -23,5 +23,7 @@ class ScavTrap : public ClapTrap {
         ScavTrap (const std::string& name);
         // Copy of constructor
         ScavTrap (const ScavTrap& copy);
+
+        
 };
 
