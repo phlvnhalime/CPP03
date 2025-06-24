@@ -6,7 +6,7 @@
 /*   By: hpehliva <hpehliva@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/14 14:29:15 by hpehliva          #+#    #+#             */
-/*   Updated: 2025/06/19 15:52:08 by hpehliva         ###   ########.fr       */
+/*   Updated: 2025/06/24 22:29:10 by hpehliva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,6 @@ class ClapTrap{
         void attack(const std::string& target);
         void takeDamage(unsigned int amount);
         void beRepaired(unsigned int amount);
-
         // For testing get the variable;
         unsigned int getHitPoint() const;
         unsigned int getEnergyPoints() const;

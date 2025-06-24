@@ -6,7 +6,7 @@
 /*   By: hpehliva <hpehliva@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/19 23:23:39 by hpehliva          #+#    #+#             */
-/*   Updated: 2025/06/19 23:24:34 by hpehliva         ###   ########.fr       */
+/*   Updated: 2025/06/24 22:28:58 by hpehliva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,10 @@ class ScavTrap : public ClapTrap {
         ScavTrap(const ScavTrap& copy);
         // Assigment operator
         ScavTrap& operator=(const ScavTrap& copy);
-
+        // destructor
         ~ScavTrap();
 
         void attack(const std::string& target);
-
-        //
         void guardGate();
 };
 

@@ -6,7 +6,7 @@
 /*   By: hpehliva <hpehliva@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/19 23:23:24 by hpehliva          #+#    #+#             */
-/*   Updated: 2025/06/19 23:23:25 by hpehliva         ###   ########.fr       */
+/*   Updated: 2025/06/24 22:23:51 by hpehliva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ ScavTrap::ScavTrap(const std::string& name): ClapTrap(name) {
     hitPoints = 100;
     energyPoints = 50;
     attackDamage = 20;
-    std::cout << "ScavTrap" << name << "has been constructed" << std::endl;
+    std::cout << "ScavTrap " << name << "has been constructed" << std::endl;
 }
 
 ScavTrap::ScavTrap(const ScavTrap& copy): ClapTrap(copy.name){
@@ -48,20 +48,18 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& copy){
 void ScavTrap::attack(const std::string& target){
     if(hitPoints == 0)
     {
-        std::cout << "ScavTrap" << name << " can't attack because it hasn't hit points!" << std::endl;
+        std::cout << "ScavTrap " << name << " can't attack because it hasn't hit points!" << std::endl;
         return ;
     }
     if(energyPoints == 0)
     {
-        std::cout << "ScavTrap" << name << " can't attack because it hasn't energy!" << std::endl;
+        std::cout << "ScavTrap " << name << " can't attack because it hasn't energy!" << std::endl;
         return ;
     }
     energyPoints--;
     std::cout << RED << "ScavTrap " << name << " attack " << target << ", causing " << attackDamage << " points of damage!" << RESET << std::endl;
 }
-/*
 
-*/
 void ScavTrap::guardGate(){
     std::cout << "ScavTrap " << name << "has guard gate right now!" << std::endl;
 }

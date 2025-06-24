@@ -6,7 +6,7 @@
 /*   By: hpehliva <hpehliva@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/14 14:29:10 by hpehliva          #+#    #+#             */
-/*   Updated: 2025/06/19 16:13:57 by hpehliva         ###   ########.fr       */
+/*   Updated: 2025/06/24 22:29:16 by hpehliva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,5 +124,7 @@ int main(){
 
     std::cout << RED << "Finally End! We fight with this code much" << RESET << std::endl;
     std::cout << std::endl;
+
+    
     return 0;
 }
