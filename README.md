@@ -208,20 +208,6 @@ Use protected for members that derived classes need access to.
 
 ---
 
-## 🎮 Game Design Through OOP
-
-This module demonstrates how **inheritance models real-world relationships**:
-
-**Base Concept:** All robots share common attributes (health, energy, damage)
-
-**Specializations:**
-- **ScavTrap:** Guardian role with gate-keeping abilities
-- **FragTrap:** Social fighter with high-energy combat style
-
-**Extensibility:** Easy to add new robot types (Mage, Healer, etc.) by inheriting from ClapTrap.
-
----
-
 ## 📣 Final Notes
 
 This module was essential for understanding **inheritance as a fundamental OOP concept**. It demonstrates how to:
